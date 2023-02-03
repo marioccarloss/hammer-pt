@@ -11,5 +11,5 @@ export type Home = {
 export type Ctas = {
   name: string,
   url: string,
-  btn_outlined?: boolean
+  outlined?: boolean
 }

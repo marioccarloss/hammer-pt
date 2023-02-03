@@ -31,6 +31,7 @@
   .btn--outline,
   .btn--outline--negative {
     @apply
+      max-h-[46px]
       flex
       justify-center
       text-[15px]
@@ -40,6 +41,15 @@
       rounded-md
       py-3
       px-3
+  }
+
+  .btn {
+    @apply
+      bg-color
+      text-white
+      bg-primary
+      hover:bg-primary
+      hover:bg-secondary
   }
 
   .btn--outline {
@@ -63,14 +73,10 @@
       border
       border-solid
       border-color
-      hover:bg-color
-      hover:text-white
-      xl:border-white
-      bg-white
       text-color
-      xl:bg-transparent
-      xl:text-white
-      xl:hover:bg-white
-      xl:hover:text-primary
+      bg-transparent
+      text-secondary
+      hover:bg-secondary
+      hover:text-white
   }
 }

@@ -20,7 +20,7 @@ export function Navigation () {
             <li key={item.slug} className='lg:flex lg:items-center'>
               <Link
                 href={`${item.slug}`}
-                className={`${!item.light ? 'link' : 'link--negative'} ${!item.cta ? '' : 'btn--outline'}` }>
+                className={`${!item.light ? 'link' : 'link--negative'} ${!item.cta ? '' : 'btn--outline min-w-[166px]'}`}>
                   <span>
                     {item.name}
                   </span>
@@ -31,7 +31,7 @@ export function Navigation () {
             </li>
           ))}
         </ul>
-        <span className='flex items-center gap-1 text-light cursor-pointer'>
+        <span className='hidden xl:flex items-center gap-1 text-light cursor-pointer'>
           <Planet />
           <span>SPA</span>
           <Arrow />
@@ -40,7 +40,7 @@ export function Navigation () {
       <div className='absolute hidden lg:block right-0 top-0 md:w-[1200px] h-auto md:min-w-[625px] w-[800px]'>
         <Image
           src={bgImage.image.src}
-          className='absolute sm:!left-[54%] lg:!left-55%] !left-[40%] lg:w-auto overflow-visible'
+          className='absolute sm:!left-[54%] lg:!left-54%] !left-[40%] lg:w-auto overflow-visible'
           alt={bgImage.image.alt}
           width={1020}
           height={600}

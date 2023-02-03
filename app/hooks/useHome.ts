@@ -15,7 +15,7 @@ export default function useHome() {
       {
         name: 'Solicitar presupuesto',
         url: 'presupuesto',
-        btn_outlined: true
+        outlined: true
       }
     ]
   }
