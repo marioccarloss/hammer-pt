@@ -32,6 +32,7 @@
   .btn--outline--negative {
     @apply
       max-h-[46px]
+      lg:max-h-[52px]
       flex
       justify-center
       text-[15px]

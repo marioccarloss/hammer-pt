@@ -5,7 +5,7 @@ import useHome from "../../hooks/useHome";
 
 export default function Hero () {
   const { data } = useHome();
-  
+
   return (
     <main>
       <div className="px-4 lg:px-3 xl:px-0 lg:container mx-auto | lg:flex items-center gap-6 | relative z-10">
@@ -13,10 +13,10 @@ export default function Hero () {
           <span className="block text-primary text-[14px] md:text-[20px] mb-3 lg:mb-4">
             {data.tagline}
           </span>
-          <h1 className='text-[30px] lg:text-[48px] | text-secondary font-extra-bold leading-none | mb-4 lg:mb-8'>
+          <h1 className='text-[30px] lg:text-[48px] | text-secondary font-extra-bold leading-none | mb-4 lg:mb-6'>
             {data.title}
           </h1>
-          <p className="text-secondary text-[14px] sm:text-[18px] | mb-4 lg:mb-8">
+          <p className="text-secondary text-[14px] sm:text-[18px] | mb-4 lg:mb-12">
             {data.description}
           </p>
           <div className="flex gap-3 mb-4 lg:mb-0">

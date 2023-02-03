@@ -20,7 +20,7 @@ export function Navigation () {
             <li key={item.slug} className='lg:flex lg:items-center'>
               <Link
                 href={`${item.slug}`}
-                className={`${!item.light ? 'link' : 'link--negative'} ${!item.cta ? '' : 'btn--outline min-w-[166px]'}`}>
+                className={`${!item.light ? 'link' : 'link--negative'} ${!item.cta ? '' : 'btn--outline lg:max-h-[48px] min-w-[166px]'}`}>
                   <span>
                     {item.name}
                   </span>
