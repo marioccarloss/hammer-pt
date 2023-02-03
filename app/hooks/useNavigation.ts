@@ -1,4 +1,5 @@
 import { Navigation } from "../types/Navigation.d"
+import imageBg from '../../assets/images/bg.png'
 
 export default function useNavigation() {
   const data: Navigation[] = [
@@ -44,11 +45,18 @@ export default function useNavigation() {
     },
     {
       name: 'Pedir Presupuesto',
-      slug: 'pedir-presupuesto',
+      slug: 'presupuesto',
       light: true,
       cta: true,
     },
   ]
 
-  return { data }
+  const bgImage = {
+    image: {
+      src: imageBg,
+      alt: 'imagen de fondo'
+    }
+  }
+
+  return { data, bgImage }
 }

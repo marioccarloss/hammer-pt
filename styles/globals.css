@@ -2,20 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background: orange;
-}
-
 @layer base {
   .link {
-    @apply flex items-center p-4 text-[16px] font-bold text-white lg:text-color hover:text-primary;
+    @apply
+      flex
+      items-center
+      p-4
+      text-[16px]
+      font-bold
+      text-color
+      hover:text-primary;
   }
 
   .link--negative {
-    @apply flex lg:text-light hover:text-white;
+    @apply
+      flex
+      items-center
+      p-4
+      text-[16px]
+      font-bold
+      text-color
+      hover:text-primary
+      xl:text-light
+      xl:hover:text-white
+  }
+
+  .btn,
+  .btn--outline,
+  .btn--outline--negative {
+    @apply
+      flex
+      justify-center
+      text-[15px]
+      min-w-[150px]
+      text-white
+      font-bold
+      rounded-md
+      py-3
+      px-3
   }
 
   .btn--outline {
-    @apply flex justify-center text-[15px] min-w-[150px] text-white font-bold rounded-md py-3 px-3 border-2 border-solid border-white hover:bg-white hover:text-primary;
+    @apply
+      border
+      border-solid
+      border-color
+      hover:bg-color
+      hover:text-white
+      xl:border-white
+      bg-white
+      text-color
+      xl:bg-transparent
+      xl:text-white
+      xl:hover:bg-white
+      xl:hover:text-primary
+  }
+
+  .btn--outline--negative {
+    @apply
+      border
+      border-solid
+      border-color
+      hover:bg-color
+      hover:text-white
+      xl:border-white
+      bg-white
+      text-color
+      xl:bg-transparent
+      xl:text-white
+      xl:hover:bg-white
+      xl:hover:text-primary
   }
 }

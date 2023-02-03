@@ -2,19 +2,20 @@ import Link from 'next/link'
 import { Logo } from '../Logo'
 import useNavigation from '../../hooks/useNavigation';
 import { Navigation } from '../../types/Navigation.d';
+import Image from 'next/image';
 import Planet from '../icons/Planet';
 import Arrow from '../icons/Arrow';
 
 export function Navigation () {
-  const { data: navigation } = useNavigation();
+  const { data: navigation, bgImage } = useNavigation();
 
   return (
-    <header className='px-3.5'>
-      <nav className='flex items-center py-7 gap-7'>
+    <header className='px-4 relative z-10'>
+      <nav className='relative flex items-center py-7 gap-10 z-10'>
         <Link href='/'>
           <Logo />
         </Link>
-        <ul className='hidden lg:flex lg:ml-auto lg:gap-6'>
+        <ul className='hidden xl:flex lg:ml-auto lg:gap-6'>
           {navigation && navigation?.map((item: Navigation) => (
             <li key={item.slug} className='lg:flex lg:items-center'>
               <Link
@@ -36,6 +37,15 @@ export function Navigation () {
           <Arrow />
         </span>
       </nav>
+      <div className='absolute hidden lg:block right-0 top-0 md:w-[1200px] h-auto md:min-w-[625px] w-[800px]'>
+        <Image
+          src={bgImage.image.src}
+          className='absolute sm:!left-[54%] lg:!left-55%] !left-[40%] lg:w-auto overflow-visible'
+          alt={bgImage.image.alt}
+          width={1020}
+          height={600}
+        />
+      </div>
     </header>
   )
 }

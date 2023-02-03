@@ -7,12 +7,6 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1440px',
-    },
     fontWeight: {
       'light': '100',
       'normal': '400',
@@ -32,6 +26,7 @@ module.exports = {
       'gray': '#707070',
       'gray-light': '#00000012',
       'gray-light-2': '#707070',
+      'transparent': 'transparent',
     },
     fontFamily: {
       "primary": "var(--font-primary)",
