@@ -18,7 +18,7 @@ export default function RootLayout ({
   return (
     <html lang='es' className={`${nunito.variable} font-primary`}>
       <head />
-      <body>
+      <body className='overflow-x-hidden'>
         <Navigation />
         {children}
       </body>

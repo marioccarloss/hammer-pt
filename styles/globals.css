@@ -39,7 +39,7 @@
       min-w-[150px]
       text-white
       font-bold
-      rounded-md
+      rounded-lg
       py-3
       px-3
   }
@@ -79,5 +79,41 @@
       text-secondary
       hover:bg-secondary
       hover:text-white
+  }
+
+  .btn--outline--small,
+  .btn--outline--secondary {
+    @apply
+      cursor-pointer
+      flex
+      justify-center
+      border
+      border-solid
+      text-primary
+      border-primary
+      font-bold
+      rounded-lg
+      py-1
+      px-2
+      hover:bg-primary
+      hover:text-white
+  }
+
+  .btn--outline--small {
+    @apply
+      max-h-[32px]
+      text-[12px]
+      max-w-[80px]
+  }
+
+  .btn--outline--secondary {
+    @apply
+      min-w-[220px]
+      text-[16px]
+      h-[48px]
+      py-3
+      px-4
+      flex
+      items-center
   }
 }

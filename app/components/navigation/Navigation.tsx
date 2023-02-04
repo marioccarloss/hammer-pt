@@ -5,6 +5,7 @@ import { Navigation } from '../../types/Navigation.d';
 import Image from 'next/image';
 import Planet from '../icons/Planet';
 import Arrow from '../icons/Arrow';
+import Hamburger from '../icons/Hamburger';
 
 export function Navigation () {
   const { data: navigation, bgImage } = useNavigation();
@@ -36,6 +37,9 @@ export function Navigation () {
           <span>SPA</span>
           <Arrow />
         </span>
+        <div className='xl:hidden ml-auto'>
+          <Hamburger />
+        </div>
       </nav>
       <div className='absolute hidden lg:block right-0 top-0 md:w-[1200px] h-auto md:min-w-[625px] w-[800px]'>
         <Image

@@ -1,7 +1,14 @@
+import Chat from "./components/home/Chat";
 import Hero from "./components/home/Hero";
+import OurServices from "./components/home/OurServices";
 
 export default function Page () {
   return (
-    <Hero />
+    <>
+      <Hero />
+      <OurServices />
+
+      <Chat />
+    </>
   )
 }

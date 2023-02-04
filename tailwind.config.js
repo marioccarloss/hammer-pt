@@ -31,7 +31,11 @@ module.exports = {
     fontFamily: {
       "primary": "var(--font-primary)",
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        '2xl': '-11px -1px 34px #00000012',
+      },
+    },
   },
   plugins: [],
 };

@@ -1,7 +1,10 @@
 type Service = {
-  id: number,
+  id?: number,
   title: string,
   description: string
+  image?: {
+    src: string,
+  }
 }
 
 export type Services = {
